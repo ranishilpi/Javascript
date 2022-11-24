@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Js</title>
+</head>
+<style>
+    #btn{
+        padding: 9px;
+        background-color: red;
+        border: 4px solid black;
+        color: white;
+        font-weight: 100;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browser events: -->
+    <!-- click -->
+    <!-- contextmenu -->
+    <!-- mouseover/mouseout -->
+    <!-- mousedown/mouseup -->
+    <!-- mousemove -->
+    <!-- submit -->
+    <!-- focus -->
+    <!-- DOMContentloaded -->
+    <!-- transitionend -->
+    <div class="container">
+        <h1>This is events in Js</h1>
+        <p id = "para">let's learn events</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover' , function run(){
+            alert('Mouse Inside')
+        });
+
+
+
+
+
+
+
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if ( para.style.display != 'none'){
+             para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

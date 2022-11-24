@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now=new Date();
+        console.log(now)
+
+        let dat = new Date(1000);
+        console.log(dat);
+
+        let newDate = new Date('2028-09-30');
+        console.log(newDate)
+
+        let neDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(neDate)
+
+        let yr = neDate.getFullYear();
+        console.log("The year is ", yr);
+
+        let dt = neDate.getDate();
+        console.log("The date is ", dt);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is about loops</h1>
+    </div>
+    <script>
+        console.log("let us learn about loops in js");
+        let i = 0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+        
+        let subject = ["COA" , "OS" , "DAA"];
+        for (let index = 0; index < subject.length; index++) {
+            console.log("Our subject is " + subject[index]);
+            
+        }
+
+        subject.forEach(function f(element) {
+            console.log("\nThis is the class of "+ subject)
+        })
+        
+        let employee = {
+            name: "Rekha",
+            salary: 200000
+
+        }
+        //Use this loop to iterate over objects in javascript
+        for(key in employee){
+            console.log('The ${key} of employee is ${employee[key]}');
+        }
+
+        //while and do while loop as in c language
+    </script>
+</body>
+</html>
